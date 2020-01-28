@@ -9,6 +9,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.gson.Gson;
 
@@ -20,8 +21,7 @@ import io.fabric8.kubernetes.api.model.admission.AdmissionResponse;
 @Produces(MediaType.APPLICATION_JSON)
 public class IPRangeDelegationAdmissionController {
 
-	@Inject
-	Logger LOGGER;
+	private final static Logger LOGGER = LoggerFactory.getLogger(IPRangeDelegationAdmissionController.class);
 	
 	@POST
 	@Path("/validate")
