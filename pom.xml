@@ -13,11 +13,11 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus-plugin.version>1.2.0.Final</quarkus-plugin.version>
+    <quarkus.package.uber-jar>true</quarkus.package.uber-jar>
     <quarkus.platform.artifact-id>quarkus-universe-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
     <quarkus.platform.version>1.2.0.Final</quarkus.platform.version>
     <surefire-plugin.version>2.22.1</surefire-plugin.version>
-    <quarkus.package.uber-jar>true</quarkus.package.uber-jar>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -53,7 +53,12 @@
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
       <version>2.8.6</version>
-    </dependency></dependencies>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-resteasy-jsonb</artifactId>
+    </dependency>
+  </dependencies>
   <build>
     <plugins>
       <plugin>
