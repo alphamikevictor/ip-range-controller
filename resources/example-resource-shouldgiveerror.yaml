@@ -1,0 +1,12 @@
+---
+apiVersion: openpaas.com/v1
+kind: IPRangeDefinition
+metadata:
+  name: three
+spec:
+  cidrs:
+  - one
+  - two
+  - three
+status:
+  tenor: lucas

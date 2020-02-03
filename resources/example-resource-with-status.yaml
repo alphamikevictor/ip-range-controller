@@ -1,0 +1,12 @@
+apiVersion: "openpaas.com/v1"
+kind: IPRangeDefinition
+metadata:
+  name: one
+spec:
+  cidrs:
+  - one
+  - two
+  - three
+status:
+  hash: md5
+  info: Some interesting info

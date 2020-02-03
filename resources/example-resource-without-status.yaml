@@ -1,0 +1,10 @@
+---
+apiVersion: openpaas.com/v1
+kind: IPRangeDefinition
+metadata:
+  name: two
+spec:
+  cidrs:
+  - one
+  - two
+  - three
